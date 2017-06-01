@@ -1,0 +1,11 @@
+---
+layout: base
+active: chapters
+---
+<div class="container">
+  <ul>
+    {% for chapter in site.chapters %}
+      <li><a href="{{ chapter.url }}">{{ chapter.title }}</a></li>  
+    {% endfor %}
+  </ul>
+</div>

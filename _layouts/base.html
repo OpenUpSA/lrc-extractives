@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body class="header-fixed header-fixed-space-default">
+    <div class="wrapper">
+
+    {% include header.html %}
+
+    <div class="page-content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script>
+      $(function() {
+        $(".page-share.facebook").on("click", function(e) {
+          e.preventDefault();
+          window.open("https://www.facebook.com/sharer/sharer.php?u="+window.location.href,
+            "share", "width=600, height=400, scrollbars=no");
+            ga('send', 'social', 'facebook', 'share', url);
+        });
+
+        $(".page-share.twitter").on("click", function(e) {
+          e.preventDefault();
+          window.open("https://twitter.com/intent/tweet?&url="+window.location.href,
+            "share", "width=600, height=400, scrollbars=no");
+            ga('send', 'social', 'twitter', 'share', url);
+        });
+
+        $(".page-share.linkedin").on("click", function(e) {
+          e.preventDefault();
+          window.open("https://www.linkedin.com/shareArticle?mini=true&source=PMG&url="+window.location.href,
+            "share", "width=600, height=400, scrollbars=no");
+            ga('send', 'social', 'linkedin', 'share', url);
+        });
+      });
+
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
+
+    <!-- add google analytics  -->
+    
+  </body>
+
+</html>

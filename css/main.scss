@@ -1,0 +1,48 @@
+---
+---
+.navbar {
+  box-shadow: 0 0 5px rgba(115,115,115,.8), 0 2px 6px rgba(115,115,115,.7);
+  border-radius: 0;
+  background-color: #a94442;
+  border: none;
+}
+
+.navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a {
+  color: #fff;
+  &:hover {
+    color: #ccc;
+  }
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover {
+  background-color: #691d1b;
+  color: #fff;
+}
+
+.single-chapter {
+  .hero {
+    margin-top: -20px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    box-shadow: 0 0 5px rgba(115,115,115,.8), 0 2px 6px rgba(115,115,115,.7);
+    &.prospecting {
+      background-color: #c5d0d6;
+    }
+  }
+}
+
+.fixed-to-top {
+  position: fixed;
+  top: 0;
+  padding: 15px;
+  width: 390px;
+}
+
+.image-caption {
+  color: #ccc;
+  margin: 10px 0 20px 0;
+  font-size: 12px;
+  font-style: italic;
+  text-align: center;
+}
