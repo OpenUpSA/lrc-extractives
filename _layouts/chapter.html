@@ -2,19 +2,19 @@
 layout: base
 ---
 <div class="single-chapter">
-  <section class="hero {{ page.name }}">
+  <section class="hero {{ page.name }}" style="background-image: url('/img/{{ page.name }}.jpg');">
     <div class="container">
-      <div class="row">
-        <div class="col-md-4">
+      <div class="row" style="position: relative;">
+        <div class="col-md-4 chapter-extras">
           <a class="btn btn-sm btn-default download" target="_blank" href="#"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Download chapter</a>
           {% include sharing.html %}
-          <div>
+          <span class="prev-next">
               <a data-toggle="tooltip" data-placement="bottom" title="{{ page.previous.title }}" class="btn btn-sm btn-default prev {% unless page.previous.url %}disabled{% endunless %}" href="{{page.previous.url}}"><i class="fa fa-fw fa-arrow-left" aria-hidden="true"></i> Previous</a>
               <a data-toggle="tooltip" data-placement="bottom" title="{{ page.next.title }}" class="btn btn-sm btn-default next {% unless page.next.url %}disabled{% endunless %}" href="{{page.next.url}}">Next <i class="fa fa-fw fa-arrow-right" aria-hidden="true"></i></a>
-          </div>
+          </span>
         </div>
         <div class="col-md-8">
-          <h2>{{ page.title }}</h2>
+          <h2 class="title">{{ page.title }}</h2>
           <p>{{ page.intro }}</p>
         </div>
       </div>
@@ -36,23 +36,4 @@ layout: base
 
 </div>
 
-<script>
-  $("#chapter-content h1, #chapter-content h2").each(function() {
-    $(".toc-list").append("<li class='"+$(this).get(0).nodeName+"'><a href='#"+$(this).attr("id")+"'>"+$(this).text()+"</a></li>");
-  });
-  $("table").addClass("table");
-  $("#chapter-content img").addClass("center-block");
-  $("#chapter-content img").each(function() {
-    $(this).parent().append("<p class='image-caption'>" + $(this).attr("alt") + "</p>")
-  });
-  $(window).scroll(function() {
-    if ($(this).scrollTop() > 163){  
-        $('.table-of-contents').addClass("fixed-to-top");
-        $('#chapter-content').addClass("col-md-offset-4");
-    }
-    else{
-        $('.table-of-contents').removeClass("fixed-to-top");
-        $('#chapter-content').removeClass("col-md-offset-4");
-    }
-  });
-</script>
+<script src="/js/chapter.js"></script>
