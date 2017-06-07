@@ -15,23 +15,38 @@ h1, h2, h3, h4 {
   font-weight: 600;
 }
 
+a {
+  color: #9f9bb6;
+  text-decoration: none;
+}
+a:hover {
+  color: #453f63;
+  text-decoration: underline;
+}
+
 .navbar {
-  box-shadow: 0 0 5px rgba(115,115,115,.8), 0 2px 6px rgba(115,115,115,.7);
-  border-radius: 0;
-  background-color: #9f9bb6;
+  /*box-shadow: 0 0 5px rgba(115,115,115,.8), 0 2px 6px rgba(115,115,115,.7);
+  border-radius: 0;*/
+  background-color: transparent;
   border: none;
+  font-family: Helvetica Neue, sans-serif;
 }
 
 .navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a {
-  color: #fff;
+  color: #9f9bb6;
   &:hover {
     color: #eee;
   }
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover {
-  background-color: #453f63;
-  color: #fff;
+  background-color: transparent;
+  color: #453f63;
+}
+
+.lrc-logo {
+  width: 120px;
+  margin: 0 0;
 }
 
 .single-chapter {
@@ -94,6 +109,25 @@ h1, h2, h3, h4 {
     font-weight: 700;
   }
 
+  .chap {
+    font-family: Helvetica Neue, 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: -15px;
+    color: #9f9bb6;
+  }
+
+  .edu-segment {
+    margin: 30px 0px;
+    padding: 30px;
+    background-color: #e8e7ef;
+    .edu-title {
+      font-family: Helvetica Neue, 'Open Sans', sans-serif;
+      font-size: 26px;
+    }
+  }
+
   span.prev-next {
     margin-left: -15px;
     text-align: center;
@@ -108,6 +142,10 @@ h1, h2, h3, h4 {
   width: 390px;
 }
 
+img {
+  margin: 30px 0px;
+}
+
 .image-caption {
   color: #666;
   margin: 10px 0 20px 0;
@@ -118,7 +156,7 @@ h1, h2, h3, h4 {
 
 footer {
   margin-top: 20px;
-  background-color: #efefef;
+  background-color: #e8e7ef;
   margin-bottom: -10px;
   padding: 20px 0px;
 }
@@ -136,6 +174,19 @@ footer {
   }
   .introduction {
 
+  }
+  .landing-toc {
+    .toc-items {
+      padding: 20px 0px;
+    }
+    .chap {
+      font-family: Helvetica Neue, 'Open Sans', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: -15px;
+      color: #999;
+    }
   }
 }
 
