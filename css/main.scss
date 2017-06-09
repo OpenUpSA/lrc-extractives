@@ -1,7 +1,7 @@
 ---
 ---
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|PT+Serif');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|PT+Serif|Inconsolata');
 
 
 $lilac: #9f9bb6;
@@ -140,9 +140,13 @@ a:hover {
       font-family: Helvetica Neue, 'Open Sans', sans-serif;
       font-size: 26px;
     }
+    .edu-definition {
+      font-family: 'Inconsolata', monospace;
+    }
   }
 
   a.info-link {
+    font-size: 14px;
     text-decoration:none;
     font-family: Helvetica Neue, 'Open Sans', sans-serif;
     font-weight: 700;
@@ -157,6 +161,7 @@ a:hover {
   }
 
   a.close-link {
+    font-size: 14px;
     text-decoration:none;
     font-family: Helvetica Neue, 'Open Sans', sans-serif;
     font-weight: 700;
