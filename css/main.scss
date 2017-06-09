@@ -142,6 +142,35 @@ a:hover {
     }
   }
 
+  a.info-link {
+    text-decoration:none;
+    font-family: Helvetica Neue, 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: $lilac-dark;
+    padding:5px 10px;
+    margin: 0px 5px;
+    background-color: $lilac-light;
+  }
+  a.info-link:hover, {
+    color: $lilac-light;
+    background-color: $lilac-dark;
+  }
+
+  a.close-link {
+    text-decoration:none;
+    font-family: Helvetica Neue, 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: #efefef;
+    padding:5px 10px;
+    margin: 0px 5px;
+    background-color: $lilac;
+  }
+  a.close-link:hover, {
+    color: $lilac;
+    background-color: #efefef;
+  }
+
+
   span.prev-next {
     margin-left: -15px;
     text-align: center;
