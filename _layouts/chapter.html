@@ -2,25 +2,6 @@
 layout: base
 ---
 <div class="single-chapter">
-  
-  <!--<section class="hero {{ page.name }}" style="background-image: url('/img/{{ page.name }}.jpg');">
-    <div class="container">
-      <div class="row" style="position: relative;">
-        <div class="col-md-4 chapter-extras">
-          <a class="btn btn-sm btn-default download" target="_blank" href="#"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Download chapter</a>
-          {% include sharing.html %}
-          <span class="prev-next">
-              <a data-toggle="tooltip" data-placement="bottom" title="{{ page.previous.title }}" class="btn btn-sm btn-default prev {% unless page.previous.url %}disabled{% endunless %}" href="{{page.previous.url}}"><i class="fa fa-fw fa-arrow-left" aria-hidden="true"></i> Previous</a>
-              <a data-toggle="tooltip" data-placement="bottom" title="{{ page.next.title }}" class="btn btn-sm btn-default next {% unless page.next.url %}disabled{% endunless %}" href="{{page.next.url}}">Next <i class="fa fa-fw fa-arrow-right" aria-hidden="true"></i></a>
-          </span>
-        </div>
-        <div class="col-md-8">
-          <h2 class="title">{{ page.title }}</h2>
-          <p>{{ page.intro }}</p>
-        </div>
-      </div>
-    </div>
-  </section>-->
 
   <section class="chapter-header">
     <div class="container">
@@ -28,7 +9,7 @@ layout: base
         <div class="col-md-8 col-md-offset-2">
 
           <p class="chap">{{ page.chap }}</p>
-          <h1 class="title">{{ page.title }} <a class="btn btn-sm btn-default download" target="_blank" href="#"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>&nbsp;&nbsp;Download chapter</a></h1>
+          <h1 class="title">{{ page.title }} <a class="btn btn-sm btn-default download hidden-print" target="_blank" href="#"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>&nbsp;&nbsp;Download chapter</a></h1>
 
           {% include sharing.html %}
           
@@ -43,17 +24,9 @@ layout: base
     <section class="content row">
       <div id="chapter-content" class="col-md-8 col-md-offset-2">
 
-        <!--<div class="table-of-contents hidden-xs hidden-sm">
-          <h3>Browse this chapter</h3>
-          <ul class="list-unstyled toc-list">
-          </ul>
-          <a class="btn btn-default" href="#"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> Back to top</a>
-        </div>-->
-
         {{ content }}
 
-
-        <div class="col-md-6 col-md-offset-4">
+        <div class="col-md-6 col-md-offset-4 hidden-print">
           <span class="prev-next">
             <a data-toggle="tooltip" data-placement="bottom" title="{{ page.previous.title }}" class="btn btn-sm btn-default prev {% unless page.previous.url %}disabled{% endunless %}" href="{{page.previous.url}}"><i class="fa fa-fw fa-arrow-left" aria-hidden="true"></i> Previous chapter</a>
             <a data-toggle="tooltip" data-placement="bottom" title="{{ page.next.title }}" class="btn btn-sm btn-default next {% unless page.next.url %}disabled{% endunless %}" href="{{page.next.url}}">Next chapter <i class="fa fa-fw fa-arrow-right" aria-hidden="true"></i></a>

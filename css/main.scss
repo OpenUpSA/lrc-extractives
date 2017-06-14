@@ -245,3 +245,25 @@ footer {
     background-color: $lilac;
     border:none;
 }
+
+@media print {
+  a.info-link {
+    font-size: 16px !important;
+    text-decoration: none !important;
+    font-family: 'PT Serif', serif !important;
+    font-weight: normal !important;
+    padding: 0 !important;
+    margin: 0px !important;
+    background-color: #fff !important;
+    i {
+      display: none !important;
+    }
+  }
+  a.close-link {
+    display: none !important;
+  }
+  .edu-definition {
+    font-size: 16px !important;
+    font-family: 'PT Serif', serif !important;
+  }
+}
