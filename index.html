@@ -1,4 +1,45 @@
 ---
 layout: base
+active: chapters
 ---
-Hello!
+
+<div class="landing">
+
+	<section class="hero">
+	  		<img src="/img/home.jpg" alt="home image" title="home image" />
+	  		<!--<p>Integer ornare, lorem sit amet ullamcorper ultricies, quam leo rhoncus nisi, et scelerisque metus justo ac erat. Ut ex est, tincidunt et euismod quis, rutrum finibus felis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur eleifend massa nisl, in aliquet ipsum maximus sit amet. Sed efficitur turpis lorem, id tempor arcu convallis ac. Aliquam dui justo, rhoncus et dui vel, accumsan pulvinar ex. Nulla quis dui felis. Praesent finibus ultricies diam, vel tincidunt quam egestas ac.</p>-->
+	</section>
+
+	<div class="container">
+
+
+	<div class="row introduction">
+		<div class="col-md-8 col-md-offset-2">
+			<p>Integer ornare, lorem sit amet ullamcorper ultricies, quam leo rhoncus nisi, et scelerisque metus justo ac erat. Ut ex est, tincidunt et euismod quis, rutrum finibus felis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur eleifend massa nisl, in aliquet ipsum maximus sit amet. Sed efficitur turpis lorem, id tempor arcu convallis ac. Aliquam dui justo, rhoncus et dui vel, accumsan pulvinar ex. Nulla quis dui felis. Praesent finibus ultricies diam, vel tincidunt quam egestas ac.</p>
+
+		</div>
+	</div>
+
+	<div class="row landing-toc">
+		<div class="col-md-8 col-md-offset-2">
+
+			<h2>Explore the story</h2>
+
+			{% for chapter in site.chapters %}
+				<div class="toc-items">
+					<p class="chap">{{chapter.chap}}</p>
+					<h3><a href="{{ chapter.url }}">{{ chapter.title }}</a></h3>
+					<p>{{ chapter.description }}</p>
+				</div>
+			{% endfor %}
+			      
+		</div>
+	</div>
+
+
+
+
+	</div>
+
+
+</div>
