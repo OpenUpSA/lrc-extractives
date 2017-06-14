@@ -3,12 +3,9 @@
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|PT+Serif|Inconsolata');
 
-
 $lilac: #9f9bb6;
 $lilac-light: #e8e7ef;
 $lilac-dark: #453f63;
-
-
 
 body {
   font-family: 'PT Serif', serif;
@@ -18,7 +15,7 @@ body {
 }
 
 h1, h2, h3, h4 {
-  font-family: Helvetica Neue, 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
 }
 
@@ -36,7 +33,7 @@ a:hover {
   border-radius: 0;*/
   background-color: transparent;
   border: none;
-  font-family: Helvetica Neue, sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a {
@@ -105,7 +102,7 @@ a:hover {
     line-height: 36px;
     border-left: none;
     font-weight: 600;
-    font-family: Helvetica Neue, 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     border-top: 1px solid #565656;
     border-bottom: 1px solid #333;
     padding: 20px 30px;
@@ -119,12 +116,12 @@ a:hover {
     line-height: 80px;
     padding-top: 15px;
     padding-right: 8px;
-    font-family: Helvetica Neue, 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 700;
   }
 
   .chap {
-    font-family: Helvetica Neue, 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
@@ -137,8 +134,9 @@ a:hover {
     padding: 30px;
     background-color: $lilac-light;
     .edu-title {
-      font-family: Helvetica Neue, 'Open Sans', sans-serif;
+      font-family: 'Open Sans', sans-serif;
       font-size: 26px;
+      margin-bottom: 10px;
     }
     .edu-definition {
       font-family: 'Inconsolata', monospace;
@@ -148,7 +146,7 @@ a:hover {
   a.info-link {
     font-size: 14px;
     text-decoration:none;
-    font-family: Helvetica Neue, 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     color: $lilac-dark;
     padding:5px 10px;
@@ -163,16 +161,16 @@ a:hover {
   a.close-link {
     font-size: 14px;
     text-decoration:none;
-    font-family: Helvetica Neue, 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     color: #efefef;
-    padding:5px 10px;
-    margin: 0px 5px;
-    background-color: $lilac;
+    padding: 5px 10px;
+    color: $lilac-light;
+    background-color: $lilac-dark;
   }
   a.close-link:hover, {
-    color: $lilac;
-    background-color: #efefef;
+    color: $lilac-light;
+    background-color: $lilac;
   }
 
 
@@ -227,7 +225,7 @@ footer {
       padding: 20px 0px;
     }
     .chap {
-      font-family: Helvetica Neue, 'Open Sans', sans-serif;
+      font-family: 'Open Sans', sans-serif;
       font-size: 14px;
       font-weight: 700;
       text-transform: uppercase;
