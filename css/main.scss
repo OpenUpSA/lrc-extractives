@@ -4,38 +4,46 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|PT+Serif|Inconsolata');
 
 $lilac: #9f9bb6;
-$lilac-light: #e8e7ef;
+$lilac-light: #f0f0f5;
 $lilac-dark: #453f63;
+
+$blue: #3059a1;
+$blue-light: #678ac9;
+$grey: #ebeaef;
+$green: #3b8782;
+$sand-light: #f1efe6;
+$sand-dark: #efe4b2;
 
 body {
   font-family: 'PT Serif', serif;
   font-size: 16px;
   line-height: 28px;
-  background-color: #f9f9f9;
+  background-color: #fff;
 }
 
 h1, h2, h3, h4 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: Helvetica Neue, 'Open Sans', sans-serif;
   font-weight: 600;
 }
 
 a {
-  color: $lilac;
+  color: $blue;
   text-decoration: none;
 }
 a:hover {
-  color: $lilac-dark;
-  text-decoration: underline;
+  color: $blue-light;
+  text-decoration: none;
 }
 
 .navbar {
   border-radius: 0;
-  background-color: transparent;
+  background-color: #fff;
   border: none;
   font-family: 'Open Sans', sans-serif;
   margin-bottom: 0;
+  padding: 10px 0px;
   .navbar-brand {
-    padding: 10px 15px;
+    padding: 0px 15px;
     margin-bottom: 10px;
   }
 }
@@ -64,12 +72,14 @@ a:hover {
 
 .header {
   .lrc-logo {
-    width: 120px;
+    width: 150px;
     margin: 0 0;
   }
 }
 
 .single-chapter {
+  margin-top: 30px;
+  margin-bottom: 30px;
   .title {
     @media (max-width: 993px) {
       text-align: center;
@@ -93,15 +103,8 @@ a:hover {
     margin: 30px 0px;
   }
 
-  .firstcharacter {
-    float: left;
-    color: $lilac;
-    font-size: 120px;
-    line-height: 80px;
-    padding-top: 15px;
-    padding-right: 8px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
+  h1 {
+    color: $blue;
   }
 
   .chap {
@@ -132,14 +135,14 @@ a:hover {
     text-decoration:none;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
-    color: $lilac-dark;
+    color: #fff;
     padding:5px 10px;
     margin: 0px 5px;
-    background-color: $lilac-light;
+    background-color: $blue;
   }
   a.info-link:hover {
-    color: $lilac-light;
-    background-color: $lilac-dark;
+    color: #fff;
+    background-color: $blue-light;
   }
 
   a.close-link, .prev-next > a {
@@ -149,12 +152,11 @@ a:hover {
     font-weight: 700;
     color: #efefef;
     padding: 5px 10px;
-    color: $lilac-light;
-    background-color: $lilac-dark;
+    color: #fff;
+    background-color: $blue;
   }
   a.close-link:hover, .prev-next > a:hover {
-    color: $lilac-light;
-    background-color: $lilac;
+    background-color: $blue-light;
   }
 
   span.prev-next {
@@ -178,8 +180,9 @@ a:hover {
 }
 
 footer {
-  margin-top: 20px;
+  text-align: center;
   background-color: $lilac-light;
+  border-top: 1px solid $lilac;
   margin-bottom: -10px;
   padding: 20px 0px;
   img {
@@ -190,16 +193,37 @@ footer {
 
 .landing {
   .hero {
-    margin-top: -20px;
     margin-bottom: 20px;
+    background-image: url('/img/welcome.JPG');
+    background-size:cover;
+    background-position: bottom left;
+    height: 420px;
     img {
+      border-top: 1px solid $lilac;
+      border-bottom: 1px solid $lilac;
       width: 100%;
+    }
+    h1 {
+      font-size: 65px;
+      color: #fff;
+      padding-bottom: 7px;
+      margin-top: 120px;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
+      text-align: center;
+    }
+    p {
+      color: #fff;
+      font-size: 21px;
+      margin-top: 10px;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
+      text-align:center;
     }
   }
   .introduction {
 
   }
   .landing-toc {
+    margin-bottom: 20px;
     .toc-items {
       padding: 20px 0px;
     }
@@ -209,7 +233,14 @@ footer {
       font-weight: 700;
       text-transform: uppercase;
       margin-bottom: -15px;
-      color: #999;
+      color: $lilac;
+    }
+  }
+  .landing-about {
+    /*background-color: $lilac;*/
+    padding: 20px 0px 30px 0;
+    h2 {
+
     }
   }
 }
@@ -220,8 +251,8 @@ footer {
 }
 
 .btn-default:hover {
-    color: #f9f9f9;
-    background-color: $lilac;
+    color: #fff;
+    background-color: $blue;
     border:none;
 }
 
