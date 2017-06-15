@@ -176,6 +176,11 @@ footer {
   background-color: $lilac-light;
   margin-bottom: -10px;
   padding: 20px 0px;
+  img {
+    max-width: 150px;
+    padding: 10px;
+    border: 1px solid $lilac;
+  }
 }
 
 .landing {
