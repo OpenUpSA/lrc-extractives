@@ -9,7 +9,7 @@ layout: base
         <div class="col-md-8 col-md-offset-2">
 
           <p class="chap">{{ page.chap }}</p>
-          <h1 class="title">{{ page.title }} <a class="btn btn-sm btn-default download hidden-print" target="_blank" href="#"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>&nbsp;&nbsp;Download chapter</a></h1>
+          <h1 class="title">{{ page.title }} <a class="btn btn-sm btn-default download hidden-print" target="_blank" href="/pdfs/{{ page.name }}.pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>&nbsp;&nbsp;Download chapter</a></h1>
 
           {% include sharing.html %}
           
@@ -26,8 +26,8 @@ layout: base
 
         {{ content }}
 
-        <div class="col-md-6 col-md-offset-4 hidden-print">
-          <span class="prev-next">
+        <div class="col-md-8 col-md-offset-2 hidden-print">
+          <span class="prev-next center-block">
             <a data-toggle="tooltip" data-placement="bottom" title="{{ page.previous.title }}" class="btn btn-sm btn-default prev {% unless page.previous.url %}disabled{% endunless %}" href="{{page.previous.url}}"><i class="fa fa-fw fa-arrow-left" aria-hidden="true"></i> Previous chapter</a>
             <a data-toggle="tooltip" data-placement="bottom" title="{{ page.next.title }}" class="btn btn-sm btn-default next {% unless page.next.url %}disabled{% endunless %}" href="{{page.next.url}}">Next chapter <i class="fa fa-fw fa-arrow-right" aria-hidden="true"></i></a>
           </span>
