@@ -7,11 +7,18 @@ $lilac: #9f9bb6;
 $lilac-light: #e8e7ef;
 $lilac-dark: #453f63;
 
+$blue: #3059a1;
+$blue-light: #678ac9;
+$grey: #ebeaef;
+$green: #3b8782;
+$sand-light: #f1efe6;
+$sand-dark: #efe4b2;
+
 body {
   font-family: 'PT Serif', serif;
   font-size: 16px;
   line-height: 28px;
-  background-color: #f9f9f9;
+  background-color: #fff;
 }
 
 h1, h2, h3, h4 {
@@ -20,22 +27,22 @@ h1, h2, h3, h4 {
 }
 
 a {
-  color: $lilac;
+  color: $blue;
   text-decoration: none;
 }
 a:hover {
-  color: $lilac-dark;
-  text-decoration: underline;
+  color: $blue-light;
+  text-decoration: none;
 }
 
 .navbar {
   border-radius: 0;
-  background-color: transparent;
+  background-color: #fff;
   border: none;
   font-family: 'Open Sans', sans-serif;
   margin-bottom: 0;
   .navbar-brand {
-    padding: 10px 15px;
+    padding: 0px 15px;
     margin-bottom: 10px;
   }
 }
@@ -64,7 +71,7 @@ a:hover {
 
 .header {
   .lrc-logo {
-    width: 120px;
+    width: 150px;
     margin: 0 0;
   }
 }
@@ -179,7 +186,8 @@ a:hover {
 
 footer {
   margin-top: 20px;
-  background-color: $lilac-light;
+  background-color: $sand-light;
+  border-top: 1px solid $sand-dark;
   margin-bottom: -10px;
   padding: 20px 0px;
   img {
@@ -190,7 +198,6 @@ footer {
 
 .landing {
   .hero {
-    margin-top: -20px;
     margin-bottom: 20px;
     img {
       width: 100%;
@@ -209,7 +216,7 @@ footer {
       font-weight: 700;
       text-transform: uppercase;
       margin-bottom: -15px;
-      color: #999;
+      color: $lilac;
     }
   }
 }
